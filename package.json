@@ -1,0 +1,9 @@
+{
+  "name": "api.mojamoja.work",
+  "version": "0.1.0",
+  "description": "令和最高のapiエンドポイント",
+  "main": "main.js",
+  "repository": "git@github.com:s10akir/api.mojamoja.work.git",
+  "author": "Akira Shinohara <k017c1067@it-neec.jp>",
+  "license": "MIT"
+}
