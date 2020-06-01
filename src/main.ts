@@ -1,4 +1,6 @@
 import express from "express";
+import path from "path";
+import apiRouter from "./api";
 
 const app: express.Express = express();
 
@@ -15,9 +17,8 @@ app.use((_, res, next) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (_, res) => {
-  res.json({ message: "Hello World" });
-});
+app.use("/", apiRouter);
+app.use(express.static(path.join(__dirname, "assets")));
 
 const port: number = Number(process.env.PORT) || 3000;
 app.listen(port, () => {
