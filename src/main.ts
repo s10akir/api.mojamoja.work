@@ -1,4 +1,4 @@
-function greet(target: string): string {
+function greet (target: string): string {
   return `Hello, ${target}!`;
 }
 
