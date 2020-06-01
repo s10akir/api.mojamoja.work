@@ -2,8 +2,18 @@
   "name": "api.mojamoja.work",
   "version": "0.1.0",
   "description": "令和最高のapiエンドポイント",
-  "main": "main.js",
+  "main": "dist/main.js",
   "repository": "git@github.com:s10akir/api.mojamoja.work.git",
   "author": "Akira Shinohara <k017c1067@it-neec.jp>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "build": "babel src --extensions '.ts,.tsx' --out-dir dist --copy-files"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1"
+  }
 }
