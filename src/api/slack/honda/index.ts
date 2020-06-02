@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Hondas } from "../../../lib/honda";
+import { Honda } from "../../../lib/honda";
 
 const hands = [":fist:", ":v:", ":hand:", ":middle_finger:"];
 
@@ -15,7 +15,7 @@ router.post("/janken", (req, res) => {
     return;
   }
 
-  const honda = Hondas[0]; // TODO: random selection
+  const honda = Honda.random(); // TODO: random selection
   const params = {
     response_type: "in_channel",
     text: honda.message,
