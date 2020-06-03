@@ -34,7 +34,7 @@ export const Honda: Honda = {
       imageUrl: `${UrlPrefix}/honda_03.png`,
     },
     {
-      message: `もと美味しくなったペプシジャパンコーラ、飲んでみたくないですか？
+      message: `もっと美味しくなったペプシジャパンコーラ、飲んでみたくないですか？
 それやったら買ってください。`,
       imageUrl: `${UrlPrefix}/honda_04.png`,
     },
