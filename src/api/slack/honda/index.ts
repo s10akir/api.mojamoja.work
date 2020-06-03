@@ -15,7 +15,7 @@ router.post("/janken", (req, res) => {
     return;
   }
 
-  const honda = Honda.random(); // TODO: random selection
+  const honda = Honda.random();
   const params = {
     response_type: "in_channel",
     text: honda.message,
